@@ -1,0 +1,144 @@
+.container{
+    height: 80px;
+    background-color: #121212;
+    display: flex;
+    padding: 0 50px;
+    margin: 0 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    justify-content: space-between;
+  
+}
+
+.listEmail button {
+    height: 35px;
+    width: 90px;
+    border: none;
+    color: green;
+    font-size: 18px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.listEmail button:hover {
+    background-color: white;
+    color : green;
+    transition: 0.5s;
+}
+
+.item:first-child{
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+}
+
+.list {
+    color: white;
+    font-size: 16px;
+    list-style-type: none;
+    display: flex;
+}
+
+.listItem{
+    cursor: pointer;
+}
+
+.item:nth-child(2) {
+    display: flex;
+    flex: 1;
+} 
+
+.item:nth-child(2) Link {
+    color: whitesmoke;
+}
+
+.list li {
+   display: flex;
+   margin-left: 20px;
+   justify-content: center;
+   align-items: center;
+   font-size: 18px;
+   font-weight: lighter;
+}
+
+.item:last-child {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.item:last-child span {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 18px; 
+    margin-left: 10px;   
+}
+
+.hamburger {
+    display: none;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    width: 50vw;
+    height: calc(100vh - 80px);
+    background-color: black;
+    top: 75px;
+    right: 0px;
+    z-index: 9999;
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    border: 1px solid white;
+    color: lightgray;
+    list-style: none;
+    transition: all 1s ease;
+  }
+
+@media screen and (max-width: 480px){
+    .list {
+        display: none;
+    }
+
+    .item:first-child {
+        display: flex;
+        flex: 1;
+    }
+
+    .item:nth-child(2){
+        display: flex;
+        flex: 1
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 20px;
+        position: absolute;
+        top: 30px;
+        cursor: pointer;
+        left: 330px;
+    }
+
+    .line { 
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 380px;
+      }
+}

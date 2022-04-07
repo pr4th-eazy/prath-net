@@ -1,0 +1,42 @@
+.container {
+  height: calc(60vh - 80px);
+  background-color: #121212;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 150px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  font-size: 36px;
+  padding-top: 20px;
+  color: antiquewhite;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: calc(110vh - 80px);
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    margin: 0 140px;
+    justify-content: space-between;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    text-align: center;
+    margin: 0 20px;
+  }
+}
